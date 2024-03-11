@@ -204,7 +204,7 @@ class DownloadWorker(context: Context, params: WorkerParameters) :
         }
         return try {
             downloadFile(applicationContext, url, savedDir, filename, headers, isResume, timeout)
-            cleanUp()
+            //cleanUp()
             dbHelper = null
             taskDao = null
             Result.success()
